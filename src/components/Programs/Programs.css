@@ -1,0 +1,28 @@
+.header{
+    margin-top: 60px;
+    margin-bottom: 15px;
+    display: flex;
+    color: blueviolet;
+}
+
+h3{
+    margin-bottom: 25px;
+}
+
+.programs{
+    margin: 30px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.program img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.program{
+    flex-basis: 31%;
+}
