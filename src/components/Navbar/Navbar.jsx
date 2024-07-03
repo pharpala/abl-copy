@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Navbar.css'
 import logo from '../../assets/cepssc-navbar.png'
 
@@ -7,11 +8,11 @@ const Navbar = () => {
     <nav className='container'>
         <img src={logo} alt="logo" className='logo'/>
         <ul>
-            <li>Home</li>
-            <li>About us</li>
-            <li>Events</li>
-            <li>Forms & Documents</li>
-            <li> <button className='btn'> Contact us </button></li>
+            <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About us</Link></li>
+        <li><Link to="/events">Events</Link></li>
+        <li><Link to="/forms-documents">Forms & Documents</Link></li>
+        <li><Link to="/contact" className='btn'>Contact us</Link></li>
         </ul>
     </nav>
   )
