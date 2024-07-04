@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero'
 import Events from './components/Events/Events'
 import Title from './components/Title/Title'
 import About from './pages/About/About'
+import Team from './pages/About/Team'
 
 const Home = () => {
   return (
@@ -18,6 +19,14 @@ const Home = () => {
   )
 }
 
+const Aboutus = () => {
+  return (
+    <div className='container'>
+      <About />
+    </div>
+  )
+}
+
 
 const App = () => {
   return (
@@ -25,7 +34,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<Aboutus />} />
       </Routes>
     </Router>
   )
