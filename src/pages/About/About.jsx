@@ -1,9 +1,15 @@
 import React from 'react'
 import './About.css'
 import summitlady from '../../assets/summit-lady.png'
+import cepsscteams from '../../assets/cepssc-teams.png'
+
+import Team from './Team'
+import './Team.css'
+
 
 const About = () => {
   return (
+    <>
     <div className='about'>
         <div className="about-left">
             <h2> ABOUT CEPSSC </h2>
@@ -20,6 +26,15 @@ const About = () => {
             <img src={summitlady} alt="lady-photo" className='about-img'/>
         </div>
     </div>
+    <div className='about-2'>
+        <h2> Who is part of CEPSSC?</h2>
+        <img src={cepsscteams} alt="clubs" />
+    </div>
+    <div className='about-3'>
+        <h2 className='blue'> Meet the Team</h2>
+    </div>
+    <Team />
+    </>
   )
 }
 
