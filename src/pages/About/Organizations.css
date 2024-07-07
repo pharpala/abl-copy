@@ -1,9 +1,10 @@
 .orgs {
-    margin: 20px auto; /* Adjust the top and bottom margin */
+    margin: 20px auto; 
+    margin-bottom: 100px;
     width: 90%;
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
-    gap: 20px; /* Add space between the .constrain divs */
+    flex-wrap: wrap; 
+    gap: 20px; 
     justify-content: space-between;
   }
   

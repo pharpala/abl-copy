@@ -3,6 +3,7 @@ import blankpfp from '../../assets/blank-pfp.webp'
 import michaela from '../../assets/michaela.jpg'
 import nexticon from '../../assets/next-icon.png'
 import backicon from '../../assets/back-icon.png'
+import me from '../../assets/me.jpeg'
 
 const Team = () => {
 
@@ -46,6 +47,8 @@ const Team = () => {
                     </div>
                 </li>
 
+                
+
                 <li>
                     <div className="slide">
                         <div className="user-info">
@@ -53,6 +56,22 @@ const Team = () => {
                             <div>
                                 <h3>Ellena Song</h3>
                                 <span> VP of Communications </span>
+                            </div>
+                        </div>
+                        <p>
+                            As President, Michaela is responsible for overseeing 
+                            the commitee and ensuring that all events run smoothly. 
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div className="slide">
+                        <div className="user-info">
+                            <img src={me} alt="user" />
+                            <div>
+                                <h3> Pranay Harpalani </h3>
+                                <span> VP of Social Affairs </span>
                             </div>
                         </div>
                         <p>
@@ -85,22 +104,6 @@ const Team = () => {
                             <div>
                                 <h3> Marcus Aldred-Ganhao </h3>
                                 <span> VP of Internal Affairs </span>
-                            </div>
-                        </div>
-                        <p>
-                            As President, Michaela is responsible for overseeing 
-                            the commitee and ensuring that all events run smoothly. 
-                        </p>
-                    </div>
-                </li>
-
-                <li>
-                    <div className="slide">
-                        <div className="user-info">
-                            <img src={blankpfp} alt="user" />
-                            <div>
-                                <h3> Pranay Harpalani </h3>
-                                <span> VP of Social Affairs </span>
                             </div>
                         </div>
                         <p>

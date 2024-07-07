@@ -12,6 +12,7 @@ import planet from '../../assets/planet.png'
 import toxicology from '../../assets/toxicology.png'
 import radio from '../../assets/radio.png'
 import nanoscience from '../../assets/nanoscience.png'
+import dna from '../../assets/dna.png'
 
 const Organizations = () => {
     return (
@@ -147,10 +148,10 @@ const Organizations = () => {
 
             <div className="constrain">
                 <div className="org">
-                    <a href="https://www.instagram.com/uofgtoxsa/" target="_blank" rel="noopener noreferrer">
-                        <img src={nanoscience} alt="socis" />
+                    <a href="https://www.instagram.com/nanoclub_guelph/" target="_blank" rel="noopener noreferrer">
+                        <img src={nanoscience} alt="nanoscience" />
                         <div className="caption-2">
-                            <img src={radio} alt="coding" />
+                            <img src={dna} alt="dna" />
                             <p>Check us out!</p>
                         </div>
                     </a>
