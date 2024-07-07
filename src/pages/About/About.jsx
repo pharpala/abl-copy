@@ -6,6 +6,9 @@ import cepsscteams from '../../assets/cepssc-teams.png'
 import Team from './Team'
 import './Team.css'
 
+import Organizations from './Organizations'
+import './Organizations.css'
+
 
 const About = () => {
   return (
@@ -34,6 +37,10 @@ const About = () => {
         <h2 className='blue'> Meet the Team</h2>
     </div>
     <Team />
+    <div className='about-3'>
+        <h2 className='blue'> Our Student Organizations </h2>
+    </div>
+    <Organizations/>
     </>
   )
 }

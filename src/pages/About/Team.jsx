@@ -1,20 +1,39 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import blankpfp from '../../assets/blank-pfp.webp'
+import michaela from '../../assets/michaela.jpg'
 import nexticon from '../../assets/next-icon.png'
 import backicon from '../../assets/back-icon.png'
 
 const Team = () => {
+
+    const slider = useRef()
+    let tx = 0
+
+    const slideForward = () => {
+        if(tx > -65){
+            tx -= 16.67
+        }
+        slider.current.style.transform = `translateX(${tx}%)`
+    }
+    const slideBackward = () => {
+        if(tx < 0){
+            tx += 16.67
+        }
+        slider.current.style.transform = `translateX(${tx}%)`
+    }
+
+
   return (
     <div className='testimonials'>
-        <img src={nexticon} alt="next" className='next-btn'/>
-        <img src={backicon} alt="next" className='back-btn'/>
+        <img src={nexticon} alt="next" className='next-btn' onClick={slideForward}/>
+        <img src={backicon} alt="next" className='back-btn' onClick={slideBackward}/>
         <div className="slider">
-            <ul>
+            <ul ref={slider}>
 
                 <li>
                     <div className="slide">
                         <div className="user-info">
-                            <img src={blankpfp} alt="user" />
+                            <img src={michaela} alt="user" />
                             <div>
                                 <h3>Michaela Hishon </h3>
                                 <span>President</span>
