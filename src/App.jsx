@@ -8,6 +8,7 @@ import About from './pages/About/About'
 import Contact from './pages/Contact/Contact'
 import './index.css'
 import Footer from './components/Footer/Footer'
+import Organizations from './pages/Organizations/Organizations'
 
 const Home = () => {
   return (
@@ -29,9 +30,18 @@ const About_us = () => {
   )
 }
 
+const Clubs = () => {
+  return (
+    <div className='club-container'>
+      <Title subtitle='Come join us' title=' Our Student Organizations'/>
+      <Organizations />
+    </div>
+  )
+}
+
 const Contact_us = () => {
   return (
-    <div className='container' style={{ margin: '140px' }}>
+    <div className='container ' style={{ margin: '140px' }}>
       <Title subtitle='Contact Us' title='Get in Touch'/>
       <Contact />
     </div>
@@ -46,6 +56,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About_us />} />
+        <Route path="/student-clubs" element={<Clubs />} />
         <Route path="/contact" element={<Contact_us />} />
       </Routes>
       <Footer />

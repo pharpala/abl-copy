@@ -16,6 +16,7 @@ import dna from '../../assets/dna.png'
 
 const Organizations = () => {
     return (
+        
         <div className="orgs">
             <div className="constrain">
                 <div className="org">
@@ -39,7 +40,9 @@ const Organizations = () => {
                             EngSoc’s goal is to provide its members with academic, 
                             professional, and social resources ensure each students
                             has a positive experience as they work to complete their 
-                            engineering degrees here at the University of Guelph.  </p>
+                            engineering degrees here at the University of Guelph.
+                            <br /><br />
+                        </p>
                 </div>
             </div>
 
@@ -67,7 +70,9 @@ const Organizations = () => {
                             interactive activities for school groups, 
                             assisting with mathematics contests and providing 
                             extracurricular learning opportunities for fellow 
-                            undergraduate students. </p>
+                            undergraduate students. 
+                            <br /><br />
+                        </p>
                 </div>
             </div>
 
@@ -119,7 +124,7 @@ const Organizations = () => {
                             meetings and events. For updates on our events 
                             contact physclub@uoguelph.ca, join our Discord, 
                             or follow us on Instagram and Facebook.  
-                            <br /><br /><br /><br /><br /><br />
+                            <br /><br />
                         </p>
                 </div>
             </div>
@@ -141,7 +146,7 @@ const Organizations = () => {
                             running events and alerting students of 
                             updates from faculty and the College of 
                             Engineering and Physical Sciences. 
-                            <br /><br /><br /><br />
+                            <br /><br /><br /><br /><br /><br />
                         </p>
                 </div>
             </div>
@@ -164,7 +169,7 @@ const Organizations = () => {
                             and other display materials to show the public 
                             what nanoscience is about. There was also 
                             interactive activities and demonstrations.  
-                            <br /><br /><br />
+                            <br /><br /><br /><br /><br />
                         </p>
                 </div>
             </div>

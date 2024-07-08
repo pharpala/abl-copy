@@ -90,3 +90,18 @@
     justify-content: center;
     width: 90%;
 }
+
+
+@media (max-width: 800px) {
+    .about{
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    .about-left{
+        flex-basis: 100%;
+        margin: 20px;
+    }
+    .about-right{
+        flex-basis: 100%;
+    }
+}

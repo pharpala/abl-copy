@@ -23,6 +23,11 @@ a{
     padding-right: 10%;
 }
 
+.container-2 {
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
 .btn{
     background: #FFF;
     color: #212121;
@@ -37,4 +42,28 @@ a{
     background: blueviolet;
     color: #ffffff;
 }
+
+.club-container {
+    margin-top: 150px; 
+  }
   
+  @media (max-width: 800px) {
+    .club-container {
+      margin-top: 100px; 
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+
+@media (max-width: 1200px) {
+    .container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 800px) {
+    .spacing{
+        margin: 70px;
+    }
+}
