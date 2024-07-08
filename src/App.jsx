@@ -9,6 +9,7 @@ import Contact from './pages/Contact/Contact'
 import './index.css'
 import Footer from './components/Footer/Footer'
 import Organizations from './pages/Organizations/Organizations'
+import Forms from './pages/Forms/Forms'
 
 const Home = () => {
   return (
@@ -41,12 +42,24 @@ const Clubs = () => {
 
 const Contact_us = () => {
   return (
-    <div className='container ' style={{ margin: '140px' }}>
+    <div className='club-container ' style={{ margin: '140px' }}>
       <Title subtitle='Contact Us' title='Get in Touch'/>
       <Contact />
     </div>
   )
 }
+
+
+const Documents = () => {
+  return (
+    <div className='club-container ' style={{ margin: '180px' }}>
+      <Title subtitle='Forms & Documents' title='Petition, Delegation & Representations
+        Forms'/>
+      <Forms />
+    </div>
+  )
+}
+
 
 
 const App = () => {
@@ -58,6 +71,7 @@ const App = () => {
         <Route path="/about" element={<About_us />} />
         <Route path="/student-clubs" element={<Clubs />} />
         <Route path="/contact" element={<Contact_us />} />
+        <Route path="/forms-documents" element={<Documents />} />
       </Routes>
       <Footer />
     </Router>

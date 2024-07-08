@@ -1,0 +1,45 @@
+.forms-container {
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  .forms-container p {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  
+  .forms-container ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+    margin-bottom: 100px;
+  }
+  
+  .forms-container li {
+    margin: 15px 0;
+  }
+  
+  .forms-container a {
+    color: blueviolet;
+    text-decoration: none;
+  }
+  
+  .forms-container a:hover {
+    text-decoration: underline;
+  }
+  
+  h3{
+    text-align: center;
+    margin: 10px;
+  }
+
+  .forms-container a.btn.dark-btn {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.spacer{
+    padding-bottom: 35px;
+}
