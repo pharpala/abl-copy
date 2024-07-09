@@ -12,7 +12,7 @@ const Footer = () => {
         <h3>Quick Links</h3>
           <ul>
             <li><a href="/about">About Us</a></li>
-            <li><a href="/events">Events</a></li>
+            <li><a href="/student-clubs">Student Clubs</a></li>
             <li><a href="/forms-documents">Forms & Documents</a></li>
             <li><a href="/contact">Contact Us</a></li>
           </ul>

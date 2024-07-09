@@ -42,7 +42,7 @@ const Clubs = () => {
 
 const Contact_us = () => {
   return (
-    <div className='club-container ' style={{ margin: '140px' }}>
+    <div className='club-container '>
       <Title subtitle='Contact Us' title='Get in Touch'/>
       <Contact />
     </div>
@@ -52,7 +52,7 @@ const Contact_us = () => {
 
 const Documents = () => {
   return (
-    <div className='club-container ' style={{ margin: '180px' }}>
+    <div className='club-container '>
       <Title subtitle='Forms & Documents' title='Petition, Delegation & Representations
         Forms'/>
       <Forms />

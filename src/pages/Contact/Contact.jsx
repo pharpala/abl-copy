@@ -24,6 +24,8 @@ const Contact = () => {
     if (data.success) {
       setResult("Form Submitted Successfully");
       event.target.reset();
+      event.target.querySelector('textarea[name="message"]').placeholder 
+      = 'How do I participate in the next event?';
     } else {
       console.log("Error", data);
       setResult(data.message);
@@ -41,6 +43,7 @@ const Contact = () => {
             feedback, and suggestions are important 
             as we strive to provide the best experience 
             to our university community.
+        </p>
             <ul>
                 <li><img src={mail_icon} alt="mail" />cepssc@uoguelph.ca </li>
                 <li> <img src={location_icon} alt="mail" />
@@ -50,7 +53,6 @@ const Contact = () => {
                     N1G 1Y2 
                 </li>
             </ul>
-        </p>
       </div>
       <div className="contact-col">
         <form onSubmit={onSubmit}>
@@ -61,8 +63,7 @@ const Contact = () => {
             <input type="Email" name='email' placeholder='doe@gmail.com'
             required/>
             <label> Write your message here </label>
-            <textarea name="message" rows='5'
-            placeholder='How do I participate in the next event?' 
+            <textarea name="message" rows='5' placeholder='How do I participate in the next event?' 
             required> </textarea>
             <button type='submit' className='btn dark-btn'>
                 Submit

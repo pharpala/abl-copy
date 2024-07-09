@@ -4,6 +4,7 @@ import michaela from '../../assets/michaela.jpg'
 import nexticon from '../../assets/next-icon.png'
 import backicon from '../../assets/back-icon.png'
 import me from '../../assets/me.jpeg'
+import noel from '../../assets/noel.jpg'
 
 const Team = () => {
 
@@ -84,7 +85,7 @@ const Team = () => {
                 <li>
                     <div className="slide">
                         <div className="user-info">
-                            <img src={blankpfp} alt="user" />
+                            <img src={noel} alt="user" />
                             <div>
                                 <h3> Noel Johnston </h3>
                                 <span> VP of External Affairs </span>
