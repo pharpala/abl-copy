@@ -42,7 +42,7 @@ const Clubs = () => {
 
 const Contact_us = () => {
   return (
-    <div className='club-container '>
+    <div className='contact-container '>
       <Title subtitle='Contact Us' title='Get in Touch'/>
       <Contact />
     </div>

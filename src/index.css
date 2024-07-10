@@ -43,14 +43,20 @@ a{
     color: #ffffff;
 }
 
-.club-container {
+.contact-container {
     padding-top: 7%;
     padding-left: 10%;
     padding-right: 10%;
   }
+
+.club-container {
+    padding-top: 7%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
   
   @media (max-width: 800px) {
-    .club-container {
+    .club-container .contact-container{
       margin-top: 50px; 
       padding-left: 5%;
       padding-right: 5%;
