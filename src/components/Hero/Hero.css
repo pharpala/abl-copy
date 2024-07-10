@@ -1,14 +1,15 @@
 .hero{
- width: 100%;
- min-height: 100vh;
- background: linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), 
-    url('../../assets/summerlee.webp') no-repeat center center; 
- background-size: cover;
- color: #fff;
- display: flex;
- align-items: center;
- justify-content: center;
- background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)),
+      url('../../assets/summerlee.webp') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 .hero-text{
@@ -57,3 +58,9 @@
         margin: 15px auto 30px;
     }
 }
+
+@media (max-width: 800px) {
+    .hero {
+      background-attachment: scroll;
+    }
+  }
