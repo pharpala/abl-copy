@@ -52,7 +52,7 @@ const Contact_us = () => {
 
 const Documents = () => {
   return (
-    <div className='club-container '>
+    <div className='contact-container '>
       <Title subtitle='Forms & Documents' title='Petition, Delegation & Representations
         Forms'/>
       <Forms />
