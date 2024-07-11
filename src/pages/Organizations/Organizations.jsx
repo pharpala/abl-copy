@@ -30,7 +30,8 @@ const Organizations = () => {
                 </div>
                 <div className="additional-info">
                         <h3> Guelph Engineering Society </h3>
-                        <p> Guelph Engineering Society is a group of elected 
+                        <p> <br />
+                            Guelph Engineering Society is a group of elected 
                             and appointed students ranging in year and program 
                             who work together to provide events, services and 
                             representation for the engineering student body. 
@@ -58,7 +59,9 @@ const Organizations = () => {
                 </div>
                 <div className="additional-info">
                         <h3> Mathematics & Statistics Club </h3>
-                        <p> Undergraduate Mathematical Science majors 
+                        <p> 
+                            <br />
+                            Undergraduate Mathematical Science majors 
                             at the University of Guelph are encouraged 
                             to be a member of the Math & Stats Club.
                             The club organizes various social events 
@@ -88,7 +91,8 @@ const Organizations = () => {
                 </div>
                 <div className="additional-info">
                         <h3> Society of Computing & Information Science </h3>
-                        <p> The official student society for the School
+                        <p> 
+                            The official student society for the School
                             of Computer Science students at the University of 
                             Guelph. They focus on community building, creating 
                             opportunities for students, and advocating for 
@@ -99,7 +103,7 @@ const Organizations = () => {
                             experience. Through this role their goal is to empower 
                             students to innovate, network, and succeed because 
                             you are what make the University of Guelph 
-                            great. 
+                            great. <br /><br />
                         </p>
                 </div>
             </div>
@@ -146,7 +150,7 @@ const Organizations = () => {
                             running events and alerting students of 
                             updates from faculty and the College of 
                             Engineering and Physical Sciences. 
-                            <br /><br /><br /><br /><br />
+                            <div className='half-break'></div>
                         </p>
                 </div>
             </div>
@@ -163,13 +167,14 @@ const Organizations = () => {
                 </div>
                 <div className="additional-info">
                         <h3> Nanoscience Club</h3>
-                        <p> The Nanoscience Club made their debut at 
+                        <p> <br />
+                            The Nanoscience Club made their debut at 
                             College Royal 2009. The club, made up of 
                             all first year students put together posters, 
                             and other display materials to show the public 
                             what nanoscience is about. There was also 
                             interactive activities and demonstrations.  
-                            <br /><br /><br /><br /><br />
+                            <br /><br /><br /><br />
                         </p>
                 </div>
             </div>
