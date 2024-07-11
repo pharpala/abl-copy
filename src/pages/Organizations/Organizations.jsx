@@ -146,7 +146,7 @@ const Organizations = () => {
                             running events and alerting students of 
                             updates from faculty and the College of 
                             Engineering and Physical Sciences. 
-                            <br /><br /><br /><br /><br /><br />
+                            <br /><br /><br /><br /><br />
                         </p>
                 </div>
             </div>
