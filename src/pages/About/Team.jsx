@@ -37,7 +37,7 @@ const Team = () => {
                         <div className="user-info">
                             <img src={michaela} alt="user" />
                             <div>
-                                <h3>Michaela Hishon </h3>
+                                <h3 className='michaela'>Michaela Hishon </h3>
                                 <span>President</span>
                             </div>
                         </div>
@@ -55,13 +55,13 @@ const Team = () => {
                         <div className="user-info">
                             <img src={blankpfp} alt="user" />
                             <div>
-                                <h3>Ellena Song</h3>
+                                <h3 className='elena'>Ellena Song</h3>
                                 <span> VP of Communications </span>
                             </div>
                         </div>
                         <p>
-                            As President, Michaela is responsible for overseeing 
-                            the commitee and ensuring that all events run smoothly. 
+                            Ellena is responsible for managing the club's social media
+                            and answering all enqueries.
                         </p>
                     </div>
                 </li>
@@ -71,13 +71,13 @@ const Team = () => {
                         <div className="user-info">
                             <img src={me} alt="user" />
                             <div>
-                                <h3> Pranay Harpalani </h3>
+                                <h3 className='pranay'> Pranay Harpalani </h3>
                                 <span> VP of Social Affairs </span>
                             </div>
                         </div>
                         <p>
-                            As President, Michaela is responsible for overseeing 
-                            the commitee and ensuring that all events run smoothly. 
+                            Pranay runs all the events and ensures that everyone has a great time 
+                            while advancing their career.
                         </p>
                     </div>
                 </li>
@@ -87,13 +87,13 @@ const Team = () => {
                         <div className="user-info">
                             <img src={noel} alt="user" />
                             <div>
-                                <h3> Noel Johnston </h3>
+                                <h3 className='noel-h3'> Noel Johnston </h3>
                                 <span> VP of External Affairs </span>
                             </div>
                         </div>
                         <p>
-                            As President, Michaela is responsible for overseeing 
-                            the commitee and ensuring that all events run smoothly. 
+                        Noel is responsible for building and maintaining 
+                        relationships with external organizations. 
                         </p>
                     </div>
                 </li>
@@ -108,8 +108,8 @@ const Team = () => {
                             </div>
                         </div>
                         <p>
-                            As President, Michaela is responsible for overseeing 
-                            the commitee and ensuring that all events run smoothly. 
+                            Marcus oversees all internal operations and 
+                            ensures smooth communication within the organization.
                         </p>
                     </div>
                 </li>
@@ -119,13 +119,13 @@ const Team = () => {
                         <div className="user-info">
                             <img src={blankpfp} alt="user" />
                             <div>
-                                <h3> Alex MacKay </h3>
+                                <h3 className='alex-h3'> Alex MacKay </h3>
                                 <span> VP of Finance </span>
                             </div>
                         </div>
-                        <p>
-                            As President, Michaela is responsible for overseeing 
-                            the commitee and ensuring that all events run smoothly. 
+                        <p className='alex'>
+                            Alex manages all the organizations finances and
+                            makes sure we stay within budget.
                         </p>
                     </div>
                 </li>
