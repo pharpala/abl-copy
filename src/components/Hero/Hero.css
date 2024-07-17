@@ -24,6 +24,7 @@
 
 .hero-text p{
     max-width: 700px;
+    font-size: 18px;
     margin: 10px auto 20px;
     line-height: 1.4;
 }
