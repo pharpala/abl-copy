@@ -3,6 +3,7 @@ import './Footer.css';
 import instagram from '../../assets/instagram.avif'
 import facebook from '../../assets/facebook.jpg'
 import twitter from '../../assets/twitter.webp'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -11,10 +12,10 @@ const Footer = () => {
         <div className="footer-section links">
         <h3>Quick Links</h3>
           <ul>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/student-clubs">Student Clubs</a></li>
-            <li><a href="/forms-documents">Forms & Documents</a></li>
-            <li><a href="/contact">Contact Us</a></li>
+          <li><Link to="/about">About us</Link></li>
+          <li><Link to="/student-clubs">Student Clubs</Link></li>
+          <li><Link to="/forms-documents">Forms & Documents</Link></li>
+          <li><Link to="/contact">Contact us</Link></li>
           </ul>
         </div>
         <div className="footer-section social">
