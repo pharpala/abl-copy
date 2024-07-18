@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
@@ -63,12 +63,6 @@ const Documents = () => {
 
 
 const App = () => {
-
-  useEffect(() => {
-    // Log screen dimensions initially
-    console.log('Initial Screen Width:', window.innerWidth);
-    console.log('Initial Screen Height:', window.innerHeight);
-  }, []);
 
   return (
     <Router>
