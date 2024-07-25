@@ -14,7 +14,7 @@ const Events = () => {
             <div className="programs">
                 <div className='program'>
                     <img src={trivia} alt="event" />
-                    <a href="https://gryphlife.uoguelph.ca/organization/cepssc/events" target="_blank" rel="noopener noreferrer">
+                    <a href="https://gryphlife.uoguelph.ca/event/265304" target="_blank" rel="noopener noreferrer">
                         <div className="caption">
                             <img src={datetrivia} alt="" />
                         </div>
@@ -23,7 +23,7 @@ const Events = () => {
 
                 <div className='program'>
                     <img src={club} alt="event" />
-                    <a href="https://gryphlife.uoguelph.ca/organization/cepssc/events" target="_blank" rel="noopener noreferrer">
+                    <a href="https://gryphlife.uoguelph.ca/event/265270" target="_blank" rel="noopener noreferrer">
                         <div className="caption">
                             <img src={dateclub} alt="" />
                         </div>
@@ -32,7 +32,7 @@ const Events = () => {
 
                 <div className='program'>
                     <img src={freezie} alt="event" />
-                    <a href="https://gryphlife.uoguelph.ca/organization/cepssc/events" target="_blank" rel="noopener noreferrer">
+                    <a href="https://gryphlife.uoguelph.ca/event/265248" target="_blank" rel="noopener noreferrer">
                         <div className="caption">
                             <img src={datefreezies} alt="" />
                         </div>

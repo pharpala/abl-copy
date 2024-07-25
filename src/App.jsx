@@ -10,6 +10,7 @@ import './index.css'
 import Footer from './components/Footer/Footer'
 import Organizations from './pages/Organizations/Organizations'
 import Forms from './pages/Forms/Forms'
+import { Analytics } from "@vercel/analytics/react"
 
 const Home = () => {
   return (
@@ -67,6 +68,7 @@ const App = () => {
   return (
     <Router>
       <Navbar />
+      <Analytics />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About_us />} />
