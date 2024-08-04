@@ -2,7 +2,7 @@
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)),
-      url('/src/assets/sumerlee.png') no-repeat center center;
+      url('/src/assets/summerlee.webp') no-repeat center center;
     background-size: cover;
     color: #fff;
     display: flex;
