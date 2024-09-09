@@ -4,7 +4,11 @@ import michaela from '../../assets/michaela.jpg'
 import nexticon from '../../assets/next-icon.png'
 import backicon from '../../assets/back-icon.png'
 import me from '../../assets/me.jpeg'
+import alex from '../../assets/alex.jpg'
+import ellena from '../../assets/ellena.jpeg'
+import marcus from '../../assets/marcus.jpg'
 import noel from '../../assets/noel.jpg'
+
 
 const Team = () => {
 
@@ -53,7 +57,7 @@ const Team = () => {
                 <li>
                     <div className="slide">
                         <div className="user-info">
-                            <img src={blankpfp} alt="user" />
+                            <img src={ellena} alt="user" />
                             <div>
                                 <h3 className='elena'>Ellena Song</h3>
                                 <span> VP of Communications </span>
@@ -101,7 +105,7 @@ const Team = () => {
                 <li>
                     <div className="slide">
                         <div className="user-info">
-                            <img src={blankpfp} alt="user" />
+                            <img src={marcus} alt="user" />
                             <div>
                                 <h3> Marcus Aldred-Ganhao </h3>
                                 <span> VP of Internal Affairs </span>
@@ -117,7 +121,7 @@ const Team = () => {
                 <li>
                     <div className="slide">
                         <div className="user-info">
-                            <img src={blankpfp} alt="user" />
+                            <img src={alex} alt="user" />
                             <div>
                                 <h3 className='alex-h3'> Alex MacKay </h3>
                                 <span> VP of Finance </span>
