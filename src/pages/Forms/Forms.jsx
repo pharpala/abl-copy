@@ -18,31 +18,24 @@ const Forms = () => {
         the request is to be presented.
       </p>
       <ul>
-        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfCunaxANGdyLHqeV477B4j8cUT_TgZkzlKWS5rbfRe_eh7fg/viewform" target="_blank" rel="noopener noreferrer">
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd_WgNvmC8L5B4Fxuw3sCUmtzf4bleicmuqVefNuz5tXYG-ow/viewform" target="_blank" rel="noopener noreferrer">
             PDR Form</a></li>
         <li><a href="https://cpesscdotcom.wordpress.com/wp-content/uploads/2020/01/cepssc-budget-form-2020.pdf" target="_blank" rel="noopener noreferrer">
             PDR Budget Form</a></li>
-        <li><a href="https://cpesscdotcom.wordpress.com/wp-content/uploads/2020/01/cepssc-events-and-reimbursement-form-2020_final.pdf" target="_blank" rel="noopener noreferrer">
-            Events and Budget Form</a></li>
+        <li><a href=" https://forms.gle/2JGTypPSu9Hq6zko7" target="_blank" rel="noopener noreferrer">
+            Reimbursement Form</a></li>
       </ul>
 
       <Title subtitle='' title='Board Meeting Minutes'/>
       <ul>
         <h3> 2023 - 2024 Minutes</h3>
-        <li><a href="https://static1.squarespace.com/static/60d11d6af55fef17142cdc57/t/65512636dd6cd60d69ca25e7/1699817015105/CEPSSC+Board+Agenda+1++%281%29.pdf" target="_blank" rel="noopener noreferrer">
-            Agenda 1</a></li>
-        <li><a href="https://static1.squarespace.com/static/60d11d6af55fef17142cdc57/t/655126433720fb2c240f5138/1699817028036/CEPSSC+Board+Agenda+2.pdf" target="_blank" rel="noopener noreferrer">
-            Agenda 2</a></li>
-        <li><a href="https://static1.squarespace.com/static/60d11d6af55fef17142cdc57/t/6551265db5462b2aad250526/1699817053217/CEPSSC+Board+Agenda+3+%281%29.pdf" target="_blank" rel="noopener noreferrer">
-            Agenda 3</a></li>
-        <li><a href="https://static1.squarespace.com/static/60d11d6af55fef17142cdc57/t/65512674862222051717a98e/1699817076249/CEPSSC+Board+Agenda+4+%281%29.pdf" target="_blank" rel="noopener noreferrer">
-            Agenda 4</a></li>
-        <li><a href="https://static1.squarespace.com/static/60d11d6af55fef17142cdc57/t/655126851d9d717748f9f3bd/1699817093810/CEPSSC+Board+Agenda+5+%283%29.pdf" target="_blank" rel="noopener noreferrer">
-            Agenda 5</a></li>
-        <li><a href="https://static1.squarespace.com/static/60d11d6af55fef17142cdc57/t/65512699d80c131c8a991ef9/1699817113506/CEPSSC+Board+Agenda+6+final+%282%29.pdf" target="_blank" rel="noopener noreferrer">
-            Agenda 6</a></li>
-        <li><a href="https://static1.squarespace.com/static/60d11d6af55fef17142cdc57/t/655126a9275e635d7cb1ade8/1699817129230/CEPSSC+Board+Agenda+7+%281%29.pdf" target="_blank" rel="noopener noreferrer">
-            Agenda 7</a></li>
+        <li><a href="src/assets/CEPSSC Meeting Agenda#1 Sept 16, 2024.pdf" target="_blank" rel="noopener noreferrer">
+            Agenda 1, September 16th</a></li>
+            <li><span>Agenda 2, September 23rd</span></li>
+        <li><span>Agenda 3, October 7th</span></li>
+        <li><span>Agenda 4, October 21st</span></li>
+        <li><span>Agenda 5, November 4th</span></li>
+
       </ul>
 
       <Title subtitle='' title='Miscellaneous Documents'/>
@@ -53,7 +46,7 @@ const Forms = () => {
         CEPSSC Meetings Guide</a></li>
         <li><a href="https://cpesscdotcom.wordpress.com/wp-content/uploads/2020/01/exec-position-descriptions.pdf" target="_blank" rel="noopener noreferrer">
         CEPSSC Exec Position Descriptions</a></li>
-        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfCunaxANGdyLHqeV477B4j8cUT_TgZkzlKWS5rbfRe_eh7fg/viewform" target="_blank" rel="noopener noreferrer">
+        <li><a href="src/assets/CEPSSC Constitution - Google Docs.pdf" target="_blank" rel="noopener noreferrer">
         The Official CEPSSC Constitution - Updated April 2021</a></li>
         <li><a href="https://cpesscdotcom.wordpress.com/wp-content/uploads/2019/08/sop-aso-form.pdf" target="_blank" rel="noopener noreferrer">
         CEPSSC Policy (SOP) for Accredited Student Organization (ASO) Form</a></li>
@@ -90,10 +83,10 @@ const Forms = () => {
       <Title subtitle='' title='Our Constitution'/>
       <p className='spacer'>
       Below is CEPSSC’s official constitution.
-      To view the Word document, please click 
+      To download the document, please click 
       the button.
       </p>
-      <a href="path-to-your-document.docx" download className='btn dark-btn'>
+      <a href="src/assets/CEPSSC Constitution - Google Docs.pdf" download className='btn dark-btn'>
         View Document
       </a>
     </div>
