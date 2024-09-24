@@ -29,9 +29,10 @@ const Forms = () => {
       <Title subtitle='' title='Board Meeting Minutes'/>
       <ul>
         <h3> 2023 - 2024 Minutes</h3>
-        <li><a href="src/assets/CEPSSC Meeting Agenda#1 Sept 16, 2024.pdf" target="_blank" rel="noopener noreferrer">
+        <li><a href="src/assets/meeting1.pdf" target="_blank" rel="noopener noreferrer">
             Agenda 1, September 16th</a></li>
-            <li><span>Agenda 2, September 23rd</span></li>
+            <li><a href="src/assets/meeting2.pdf" target="_blank" rel="noopener noreferrer">
+            Agenda 2, September 23rd</a></li>
         <li><span>Agenda 3, October 7th</span></li>
         <li><span>Agenda 4, October 21st</span></li>
         <li><span>Agenda 5, November 4th</span></li>
