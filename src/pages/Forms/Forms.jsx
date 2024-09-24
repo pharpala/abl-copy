@@ -87,7 +87,7 @@ const Forms = () => {
       To download the document, please click 
       the button.
       </p>
-      <a href="src/assets/CEPSSC Constitution - Google Docs.pdf" download className='btn dark-btn'>
+      <a href="/CEPSSC Constitution - Google Docs.pdf" download className='btn dark-btn'>
         View Document
       </a>
     </div>
