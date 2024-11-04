@@ -20,8 +20,6 @@ const Forms = () => {
       <ul>
         <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd_WgNvmC8L5B4Fxuw3sCUmtzf4bleicmuqVefNuz5tXYG-ow/viewform" target="_blank" rel="noopener noreferrer">
             PDR Form</a></li>
-        <li><a href="https://cpesscdotcom.wordpress.com/wp-content/uploads/2020/01/cepssc-budget-form-2020.pdf" target="_blank" rel="noopener noreferrer">
-            PDR Budget Form</a></li>
         <li><a href=" https://forms.gle/2JGTypPSu9Hq6zko7" target="_blank" rel="noopener noreferrer">
             Reimbursement Form</a></li>
       </ul>
@@ -29,13 +27,20 @@ const Forms = () => {
       <Title subtitle='' title='Board Meeting Minutes'/>
       <ul>
         <h3> 2023 - 2024 Minutes</h3>
-        <li><a href="/meeting1.pdf" target="_blank" rel="noopener noreferrer">
+
+          <li><a href="/meeting1.pdf" target="_blank" rel="noopener noreferrer">
             Agenda 1, September 16th</a></li>
-            <li><a href="/meeting2.pdf" target="_blank" rel="noopener noreferrer">
+
+          <li><a href="/meeting2.pdf" target="_blank" rel="noopener noreferrer">
             Agenda 2, September 23rd</a></li>
-        <li><span>Agenda 3, October 7th</span></li>
-        <li><span>Agenda 4, October 21st</span></li>
-        <li><span>Agenda 5, November 4th</span></li>
+
+          <li><a href="/meeting3.pdf" target="_blank" rel="noopener noreferrer">
+            Agenda 3, October 7st </a></li>
+
+          <li><a href="/meeting4.pdf" target="_blank" rel="noopener noreferrer">
+            Agenda 4, October 21st </a></li>
+
+          <li><span>Agenda 5, November 4th</span></li>
 
       </ul>
 
@@ -47,8 +52,6 @@ const Forms = () => {
         CEPSSC Meetings Guide</a></li>
         <li><a href="https://cpesscdotcom.wordpress.com/wp-content/uploads/2020/01/exec-position-descriptions.pdf" target="_blank" rel="noopener noreferrer">
         CEPSSC Exec Position Descriptions</a></li>
-        <li><a href="src/assets/CEPSSC Constitution - Google Docs.pdf" target="_blank" rel="noopener noreferrer">
-        The Official CEPSSC Constitution - Updated April 2021</a></li>
         <li><a href="https://cpesscdotcom.wordpress.com/wp-content/uploads/2019/08/sop-aso-form.pdf" target="_blank" rel="noopener noreferrer">
         CEPSSC Policy (SOP) for Accredited Student Organization (ASO) Form</a></li>
       </ul>
