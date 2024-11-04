@@ -12,6 +12,7 @@ import planet from '../../assets/planet.png'
 import toxicology from '../../assets/toxicology.png'
 import radio from '../../assets/radio.png'
 import nanoscience from '../../assets/nanoscience.png'
+import chem from '../../assets/chem_club.png'
 import dna from '../../assets/dna.png'
 
 const Organizations = () => {
@@ -31,18 +32,15 @@ const Organizations = () => {
                 <div className="additional-info">
                         <h3> Guelph Engineering Society </h3>
                         <p> <br />
-                            Guelph Engineering Society is a group of elected 
-                            and appointed students ranging in year and program 
-                            who work together to provide events, services and 
-                            representation for the engineering student body. 
-                            These students coordinate the services and events 
-                            offered and represent the rest of Guelph 
-                            Engineering at provincial and national levels.
-                            EngSoc’s goal is to provide its members with academic, 
-                            professional, and social resources ensure each students
-                            has a positive experience as they work to complete their 
-                            engineering degrees here at the University of Guelph.
-                            <br /><br />
+                        The Guelph Engineering Society (EngSoc) 
+                        is a team of students from all years and 
+                        programs who organize events, services, 
+                        and represent Guelph Engineering students. 
+                        We work to give students academic, professional, 
+                        and social resources, making sure everyone has 
+                        a great experience while earning their 
+                        engineering degrees at the University of Guelph.
+                            <br /><br /><br /><br /><br />
                         </p>
                 </div>
             </div>
@@ -61,20 +59,14 @@ const Organizations = () => {
                         <h3> Mathematics & Statistics Club </h3>
                         <p> 
                             <br />
-                            Undergraduate Mathematical Science majors 
-                            at the University of Guelph are encouraged 
-                            to be a member of the Math & Stats Club.
-                            The club organizes various social events 
-                            throughout the year and serves as a great way
-                            to meet other students, especially those 
-                            who may not be in your classes! 
-                            In addition to the social aspect of the club,
-                            members also engage in outreach such as offering
-                            interactive activities for school groups, 
-                            assisting with mathematics contests and providing 
-                            extracurricular learning opportunities for fellow 
-                            undergraduate students. 
-                            <br /><br />
+                            The Math & Stats club is devoted to 
+                            providing math-loving students a sense 
+                            of community at the university. We host 
+                            a variety of events, ranging from academic 
+                            workshops to trivia and social nights. 
+                            Come out to our events for free food and 
+                            to meet our amazing team! 
+                            <br /><br /><br /><br /><br /><br /><br />
                         </p>
                 </div>
             </div>
@@ -97,13 +89,12 @@ const Organizations = () => {
                             Guelph. They focus on community building, creating 
                             opportunities for students, and advocating for 
                             students interests. They also run events, organize 
-                            hackathons, administer clubs, and represent School 
-                            of Computer Science students. They play a role in 
+                            hackathons, and administer clubs. They play a role in 
                             uniting students and improving their university 
                             experience. Through this role their goal is to empower 
                             students to innovate, network, and succeed because 
-                            you are what make the University of Guelph 
-                            great. <br /><br />
+                            you are what makes the University of Guelph 
+                            great.
                         </p>
                 </div>
             </div>
@@ -145,12 +136,39 @@ const Organizations = () => {
                 </div>
                 <div className="additional-info">
                         <h3> Toxicology Student Association </h3>
-                        <p> A student association representing 
+                        <p> We are a student association representing 
                             the Biomedical Toxicology student body, 
                             running events and alerting students of 
                             updates from faculty and the College of 
-                            Engineering and Physical Sciences. 
-                            <div className='half-break'></div>
+                            Engineering and Physical Sciences. We are 
+                            also responsible for organizing the annual 
+                            Toxicology symposium, which is open to 
+                            everyone with an interest in toxicology. 
+                            <br /><br />
+                        </p>
+                </div>
+            </div>
+
+            <div className="constrain">
+                <div className="org">
+                    <a href="https://www.instagram.com/uog_chem_club/" target="_blank" rel="noopener noreferrer">
+                        <img src={chem} alt="nanoscience" />
+                        <div className="caption-2">
+                            <img src={dna} alt="dna" />
+                            <p>Check us out!</p>
+                        </div>
+                    </a>
+                </div>
+                <div className="additional-info">
+                        <h3> Chemistry Club</h3>
+                        <p> <br />
+                        Student-led group where members explore 
+                        chemistry through experiments, discussions, 
+                        and outreach activities. It fosters curiosity, 
+                        teamwork, and hands-on learning, promoting a 
+                        deeper understanding of chemical principles 
+                        and their real-world applications.  
+                            <br /><br /><br /><br />
                         </p>
                 </div>
             </div>
@@ -168,12 +186,12 @@ const Organizations = () => {
                 <div className="additional-info">
                         <h3> Nanoscience Club</h3>
                         <p> <br />
-                            The Nanoscience Club made their debut at 
-                            College Royal 2009. The club, made up of 
-                            all first year students put together posters, 
-                            and other display materials to show the public 
-                            what nanoscience is about. There was also 
-                            interactive activities and demonstrations.  
+                        What happens when you shrink something down 
+                        until it's measured in billionths of meters? 
+                        Turns out some pretty cool things! NanoClub 
+                        is open to anyone who is interested exploring 
+                        these phenomena and meeting others with the 
+                        same interests.
                             <br /><br /><br /><br />
                         </p>
                 </div>
