@@ -27,7 +27,7 @@ const Events = () => {
 
                 <div className='program'>
                     <img src={mentalmath} alt="event" />
-                    <a href="https://gryphlife.uoguelph.ca/event/265270" target="_blank" rel="noopener noreferrer">
+                    <a href="https://gryphlife.uoguelph.ca/event/278874" target="_blank" rel="noopener noreferrer">
                         <div className="caption">
                             <img src={datemath} alt="" />
                         </div>
