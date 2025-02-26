@@ -26,7 +26,7 @@ const Forms = () => {
 
       <Title subtitle='' title='Board Meeting Minutes'/>
       <ul>
-        <h3> 2023 - 2024 Minutes</h3>
+        <h3> 2024 - 2025 Minutes</h3>
 
           <li><a href="/meeting1.pdf" target="_blank" rel="noopener noreferrer">
             Agenda 1, September 16th</a></li>
@@ -40,7 +40,14 @@ const Forms = () => {
           <li><a href="/meeting4.pdf" target="_blank" rel="noopener noreferrer">
             Agenda 4, October 21st </a></li>
 
-          <li><span>Agenda 5, November 4th</span></li>
+          <li><a href="/meeting5.docx" target="_blank" rel="noopener noreferrer">
+            Agenda 5, November 4th </a></li>
+
+          <li><a href="/meeting6.docx" target="_blank" rel="noopener noreferrer">
+            Agenda 6, November 19th </a></li>
+
+          <li><a href="/meeting7.docx" target="_blank" rel="noopener noreferrer">
+            Agenda 7, January 14th </a></li>
 
       </ul>
 
