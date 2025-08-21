@@ -18,7 +18,7 @@ const Events = () => {
             <div className="programs">
                 <div className='program'>
                     <img src={linkedin} alt="event" />
-                    <a href="https://experienceguelph.ca/myAccount/career/events-workshops.htm" target="_blank" rel="noopener noreferrer">
+                    <a href="https://experienceguelph.ca/myAccount/career/events-workshops.html" target="_blank" rel="noopener noreferrer">
                         <div className="caption">
                             <img src={datelinkedin} alt="" />
                         </div>

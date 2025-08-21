@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        &copy; 2024 College of Engineering and Physical Sciences Student Club | All Rights Reserved
+        &copy; Made by <a className='pranay' href='https://www.pranayharpalani.com' target='_blank'>Pranay Harpalani</a> | All Rights Reserved
       </div>
     </footer>
   );
