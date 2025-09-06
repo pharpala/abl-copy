@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
 }
 
-body{
-    background: #ffffff;
+body {
+    background: #FFFFFF; /* Primary white */
+    color: #000000; /* Default text black */
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
     line-height: 1;
@@ -28,50 +29,55 @@ a{
     padding-right: 0%;
 }
 
-.btn{
-    background: #FFF;
-    color: #212121;
+.btn {
+    background: #E51937; /* Primary red */
+    color: #FFFFFF; /* White text */
     padding: 12px 22px;
     border-radius: 30px;
     cursor: pointer;
     border: 0;
     outline: 0;
+    transition: 0.3s ease;
 }
 
-.dark-btn{
-    background: blueviolet;
-    color: #ffffff;
+.btn:hover {
+    background: #187BB4; /* Secondary blue on hover */
+}
+
+.dark-btn {
+    background: #000000; /* Primary black */
+    color: #FFC429; /* Secondary yellow text */
 }
 
 .contact-container {
     padding-top: 7%;
     padding-left: 10%;
     padding-right: 10%;
-  }
+}
 
 .club-container {
     padding-top: 7%;
     padding-left: 2%;
     padding-right: 2%;
-  }
-  
-  @media (max-width: 800px) {
-    .club-container .contact-container{
-      margin-top: 50px; 
-      padding-left: 5%;
-      padding-right: 5%;
+}
+
+@media (max-width: 800px) {
+    .club-container .contact-container {
+        margin-top: 50px; 
+        padding-left: 5%;
+        padding-right: 5%;
     }
-  }
+}
 
 @media (max-width: 1200px) {
-    .container{
+    .container {
         padding-left: 5%;
         padding-right: 5%;
     }
 }
 
 @media (max-width: 800px) {
-    .spacing{
+    .spacing {
         margin: 70px;
     }
 }

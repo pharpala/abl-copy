@@ -14,7 +14,7 @@ const About = () => {
     <>
     <div className='about'>
         <div className="about-left">
-            <h2> ABOUT CEPSSC </h2>
+            <h2> ABOUT ABL </h2>
             <p> The College of Engineering and Physical Sciences 
                 Student Council (CEPSSC) helps to ensure the wellbeing
                 of all students in CEPS. We seek to maintain harmonious 

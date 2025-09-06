@@ -34,15 +34,20 @@ nav ul li a:hover {
 }
 
 nav ul li a:active {
-    color: blueviolet; /* Blueviolet color on click */
+    color: red; /* Blueviolet color on click */
 }
 
 .dark-nav {
-    background: #212EA0;
+    background: #e9304c;
 }
 
 .menu-icon{
     display: none;
+}
+
+.logo-link{
+    width: 5.5rem;
+    height: 4rem;
 }
 
 

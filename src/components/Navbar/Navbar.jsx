@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css'
-import logo from '../../assets/cepssc-navbar.png'
+import logo from '../../assets/abl.png'
 import menu_icon from '../../assets/menu-icon.png'
 
 const Navbar = () => {
@@ -29,8 +29,8 @@ const Navbar = () => {
 
   return (
     <nav className={`container ${(isHomePage && !sticky) ? '' : 'dark-nav'}`}>
-      <Link to="/">
-        <img src={logo} alt="logo" className='logo'/>
+      <Link to="/" >
+        <img src={logo} alt="logo" className='logo logo-link'/>
       </Link>
         <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
           <li><Link to="/">Home</Link></li>

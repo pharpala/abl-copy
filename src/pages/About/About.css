@@ -25,12 +25,12 @@
 .about h3{
     font-weight: 600;
     font-size: 16px;
-    color:blueviolet;
+    color:red;
 }
 
 .about h2{
     font-size: 35px;
-    color:blueviolet;
+    color:red;
     margin: 10px 0;
     max-width: 400px;
 }

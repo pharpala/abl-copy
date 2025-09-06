@@ -9,10 +9,10 @@ const Hero = () => {
   return (
     <div className='hero container'>
       <div className="hero-text">
-        <h1> College of Engineering and Physical Sciences Student Council </h1>
-        <p> Explore our accounts and stay in touch!</p>
+        <h1> Asian Business Leaders </h1>
+        <p> Explore our accounts and stay in touch! </p>
         
-        <a href="https://www.instagram.com/cepssc" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/abl.lang" target="_blank" rel="noopener noreferrer">
             <img src={instagram} alt="instagram" className="icon"/>
         </a>
         <a href="https://x.com/uofgcepssc" target="_blank" rel="noopener noreferrer">

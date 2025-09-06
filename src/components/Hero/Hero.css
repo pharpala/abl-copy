@@ -1,10 +1,10 @@
-.hero{
+.hero {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)),
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), /* Black overlay */
       url('/src/assets/summerlee.webp') no-repeat center center;
     background-size: cover;
-    color: #fff;
+    color: #FFFFFF; /* Primary white text */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,49 +12,51 @@
     background-position: center center;
 }
 
-.hero-text{
+.hero-text {
     text-align: center;
     max-width: 800px;
 }
 
-.hero-text h1{
+.hero-text h1 {
     font-size: 50px;
     font-weight: 600;
+    color: #E51937; /* Primary red heading */
 }
 
-.hero-text p{
+.hero-text p {
     max-width: 700px;
     font-size: 18px;
     margin: 10px auto 20px;
     line-height: 1.4;
+    color: #FFC429; /* Secondary yellow subtext */
 }
 
-.icon{
+.icon {
     width: 50px;
     height: 50px;
     border-radius: 15px;
     margin: 5px;
-    transition: filter 0.4s ease; /* Smooth transition effect */
+    background-color: #187BB4; /* Secondary blue icons */
+    transition: filter 0.4s ease;
 }
 
 .icon:hover {
-    filter: brightness(0.75); /* Adjust brightness to make it darker */
+    filter: brightness(0.75);
 }
-  
-  
-@media (max-width: 850px){
-    .hero-text h1{
+
+@media (max-width: 850px) {
+    .hero-text h1 {
         font-size: 40px;
     }
 }
 
-@media (max-width: 650px){
-    .hero-text h1{
+@media (max-width: 650px) {
+    .hero-text h1 {
         font-size: 30px;
         max-width: 400px;
         margin: auto;
     }
-    .hero-text p{
+    .hero-text p {
         font-size: 14px;
         margin: 15px auto 30px;
     }
@@ -62,6 +64,6 @@
 
 @media (max-width: 800px) {
     .hero {
-      background-attachment: scroll;
+        background-attachment: scroll;
     }
-  }
+}
