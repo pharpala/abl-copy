@@ -437,7 +437,7 @@
 
 .modal-content {
     position: relative;
-    max-width: 800px;
+    max-width: 500px;
     max-height: 90vh;
     background: #fffffb;
     border-radius: 12px;
@@ -484,49 +484,63 @@
     transform: scale(1.1);
 }
 
-.modal-header {
+.modal-content-simple {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    padding: 2rem 2rem 1rem;
+    text-align: center;
+    padding: 2rem;
+    gap: 1.5rem;
 }
 
 .modal-photo {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid rgba(139, 92, 246, 0.2);
-    flex-shrink: 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .modal-info {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
 }
 
 .modal-name {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 800;
     color: #2d3748;
-    margin: 0 0 0.5rem 0;
+    margin: 0;
 }
 
 .modal-position {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #8b5cf6;
     font-weight: 600;
-    margin: 0 0 1rem 0;
+    margin: 0;
 }
 
-.modal-contact {
+.modal-email {
+    font-size: 1rem;
+    color: #4a5568;
+    font-weight: 500;
+    margin: 0;
+    font-family: 'Courier New', monospace;
+}
+
+.modal-social {
     display: flex;
     gap: 1rem;
+    margin-top: 0.5rem;
 }
 
-.contact-link {
+.social-link {
     background: rgba(139, 92, 246, 0.1);
     color: #8b5cf6;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
@@ -535,72 +549,10 @@
     border: 2px solid rgba(139, 92, 246, 0.2);
 }
 
-.contact-link:hover {
+.social-link:hover {
     background: rgba(139, 92, 246, 0.2);
     transform: translateY(-2px);
-}
-
-.modal-body {
-    padding: 1rem 2rem 2rem;
-}
-
-.modal-body h3 {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #2d3748;
-    margin: 0 0 1rem 0;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid rgba(139, 92, 246, 0.1);
-}
-
-.modal-description {
-    margin-bottom: 2rem;
-}
-
-.modal-description p {
-    color: #4a5568;
-    line-height: 1.7;
-    font-size: 1rem;
-}
-
-.modal-expertise {
-    margin-bottom: 2rem;
-}
-
-.expertise-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.expertise-tag {
-    background: linear-gradient(135deg, #8b5cf6, #3b82f6);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-}
-
-.modal-achievements {
-    margin-bottom: 1rem;
-}
-
-.achievements-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.achievement-item {
-    background: rgba(139, 92, 246, 0.05);
-    border-left: 4px solid #8b5cf6;
-    padding: 1rem;
-    margin-bottom: 0.5rem;
-    border-radius: 0 8px 8px 0;
-    color: #4a5568;
-    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
 }
 
 /* Responsive Design */
@@ -670,15 +622,14 @@
         height: 200px;
     }
     
-    .modal-header {
-        flex-direction: column;
-        text-align: center;
+    .modal-content-simple {
+        padding: 1.5rem;
         gap: 1rem;
     }
     
     .modal-photo {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
     
     .modal-name {
@@ -689,8 +640,8 @@
         font-size: 1rem;
     }
     
-    .expertise-tags {
-        justify-content: center;
+    .modal-email {
+        font-size: 0.9rem;
     }
 }
 
@@ -725,11 +676,28 @@
     .modal-content {
         margin: 1rem;
         max-height: 85vh;
+        max-width: 350px;
     }
     
-    .modal-header,
-    .modal-body {
-        padding-left: 1rem;
-        padding-right: 1rem;
+    .modal-content-simple {
+        padding: 1rem;
+        gap: 0.75rem;
+    }
+    
+    .modal-photo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .modal-name {
+        font-size: 1.3rem;
+    }
+    
+    .modal-position {
+        font-size: 0.9rem;
+    }
+    
+    .modal-email {
+        font-size: 0.8rem;
     }
 }

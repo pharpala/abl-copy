@@ -188,7 +188,7 @@ const Team = () => {
                             ✕
                         </button>
                         
-                        <div className="modal-header">
+                        <div className="modal-content-simple">
                             <img 
                                 src={selectedMember.image} 
                                 alt={selectedMember.name} 
@@ -197,43 +197,12 @@ const Team = () => {
                             <div className="modal-info">
                                 <h2 className="modal-name">{selectedMember.name}</h2>
                                 <p className="modal-position">{selectedMember.position}</p>
-                                <div className="modal-contact">
-                                    <a href={selectedMember.linkedin} className="contact-link linkedin">
+                                <p className="modal-email">{selectedMember.email}</p>
+                                <div className="modal-social">
+                                    <a href={selectedMember.linkedin} className="social-link linkedin" target="_blank" rel="noopener noreferrer">
                                         LinkedIn
                                     </a>
-                                    <a href={`mailto:${selectedMember.email}`} className="contact-link email">
-                                        Email
-                                    </a>
                                 </div>
-                            </div>
-                        </div>
-                        
-                        <div className="modal-body">
-                            <div className="modal-description">
-                                <h3>About</h3>
-                                <p>{selectedMember.description}</p>
-                            </div>
-                            
-                            <div className="modal-expertise">
-                                <h3>Expertise</h3>
-                                <div className="expertise-tags">
-                                    {selectedMember.expertise.map((skill, index) => (
-                                        <span key={index} className="expertise-tag">
-                                            {skill}
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
-                            
-                            <div className="modal-achievements">
-                                <h3>Key Achievements</h3>
-                                <ul className="achievements-list">
-                                    {selectedMember.achievements.map((achievement, index) => (
-                                        <li key={index} className="achievement-item">
-                                            {achievement}
-                                        </li>
-                                    ))}
-                                </ul>
                             </div>
                         </div>
                     </div>
