@@ -35,8 +35,9 @@ const Navbar = () => {
         <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About us</Link></li>
-          <li><Link to="/student-clubs">Student Clubs</Link></li>
-          <li><Link to="/forms-documents">Forms & Documents</Link></li>
+          <li><Link to="/team">Team</Link></li>
+          <li><Link to="/gallery">Gallery</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
           <li><Link to="/contact" className='btn'>Contact us</Link></li>
         </ul>
         <img src={menu_icon} alt="menu icon" className='menu-icon' onClick={toggleMenu}/>

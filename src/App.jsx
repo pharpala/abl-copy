@@ -6,10 +6,12 @@ import Events from './components/Events/Events'
 import Title from './components/Title/Title'
 import About from './pages/About/About'
 import Contact from './pages/Contact/Contact'
+import Gallery from './pages/Gallery/Gallery'
+import GalleryOverview from './pages/Gallery/GalleryOverview'
+import Blog from './pages/Blog/Blog'
+import Team from './pages/Team/Team'
 import './index.css'
 import Footer from './components/Footer/Footer'
-import Organizations from './pages/Organizations/Organizations'
-import Forms from './pages/Forms/Forms'
 import { Analytics } from "@vercel/analytics/react"
 
 const Home = () => {
@@ -32,12 +34,17 @@ const About_us = () => {
   )
 }
 
-const Clubs = () => {
+const Gallery_Overview_Page = () => {
   return (
-    <div className='club-container'>
-      <Title subtitle='Come join us' title=' Our Student Organizations'/>
-      <Organizations />
+    <div className='gallery-overview-container'>
+      <GalleryOverview />
     </div>
+  )
+}
+
+const Gallery_Page = () => {
+  return (
+    <Gallery />
   )
 }
 
@@ -51,12 +58,18 @@ const Contact_us = () => {
 }
 
 
-const Documents = () => {
+const Blog_Page = () => {
   return (
-    <div className='contact-container '>
-      <Title subtitle='Forms & Documents' title='Petition, Delegation & Representations
-        Forms'/>
-      <Forms />
+    <div className='blog-page-container'>
+      <Blog />
+    </div>
+  )
+}
+
+const Team_Page = () => {
+  return (
+    <div className='team-page-container'>
+      <Team />
     </div>
   )
 }
@@ -67,16 +80,58 @@ const App = () => {
 
   return (
     <Router>
-      <Navbar />
       <Analytics />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About_us />} />
-        <Route path="/student-clubs" element={<Clubs />} />
-        <Route path="/contact" element={<Contact_us />} />
-        <Route path="/forms-documents" element={<Documents />} />
+        <Route path="/" element={
+          <>
+            <Navbar />
+            <Home />
+            <Footer />
+          </>
+        } />
+        <Route path="/about" element={
+          <>
+            <Navbar />
+            <About_us />
+            <Footer />
+          </>
+        } />
+        <Route path="/team" element={
+          <>
+            <Navbar />
+            <Team_Page />
+            <Footer />
+          </>
+        } />
+        <Route path="/gallery" element={
+          <>
+            <Navbar />
+            <Gallery_Overview_Page />
+            <Footer />
+          </>
+        } />
+        <Route path="/gallery/:eventId" element={
+          <>
+            <Navbar />
+            <Gallery_Page />
+            <Footer />
+          </>
+        } />
+        <Route path="/blog" element={
+          <>
+            <Navbar />
+            <Blog_Page />
+            <Footer />
+          </>
+        } />
+        <Route path="/contact" element={
+          <>
+            <Navbar />
+            <Contact_us />
+            <Footer />
+          </>
+        } />
       </Routes>
-      <Footer />
     </Router>
   )
 }

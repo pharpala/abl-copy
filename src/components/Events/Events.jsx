@@ -14,7 +14,6 @@ import datemath from '../../assets/datemath.png'
 const Events = () => {
     return (
         <div className="programs-container">
-
             <div className="programs">
                 <div className='program'>
                     <img src={linkedin} alt="event" />
@@ -32,6 +31,43 @@ const Events = () => {
                             <img src={datemath} alt="" />
                         </div>
                     </a>                    
+                </div>
+            </div>
+            
+            {/* Brand Ambassadors Section */}
+            <div className="brand-ambassadors-section">
+                <div className="brand-ambassadors-content">
+                    <h3>Become a Brand Ambassador</h3>
+                    <p>Join our team of passionate advocates and help build the Asian business community. As a Brand Ambassador, you'll represent our values, connect with fellow professionals, and drive meaningful change in your local area.</p>
+                    
+                    <div className="ambassador-benefits">
+                        <h4>What You'll Get:</h4>
+                        <ul>
+                            <li>Leadership development opportunities</li>
+                            <li>Exclusive networking events and workshops</li>
+                            <li>Direct mentorship from industry leaders</li>
+                            <li>Recognition and certificate programs</li>
+                            <li>Building valuable professional connections</li>
+                        </ul>
+                    </div>
+                    
+                    <div className="ambassador-requirements">
+                        <h4>What We're Looking For:</h4>
+                        <ul>
+                            <li>Passionate about Asian business leadership</li>
+                            <li>Strong communication and interpersonal skills</li>
+                            <li>Commitment to community engagement</li>
+                            <li>Availability for monthly events and activities</li>
+                            <li>Enthusiasm for promoting diversity and inclusion</li>
+                        </ul>
+                    </div>
+                    
+                    <div className="ambassador-cta">
+                        <button className="apply-btn" onClick={() => window.open('https://forms.google.com/your-application-form', '_blank')}>
+                            Apply Now
+                        </button>
+                        <p className="application-note">Applications are reviewed on a rolling basis. We'll contact qualified candidates within 2 weeks.</p>
+                    </div>
                 </div>
             </div>
         </div>

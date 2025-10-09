@@ -57,6 +57,87 @@
     align-items: center;
     justify-content: center;
     width: 90%;
+    padding: 40px 0;
+}
+
+/* Mission and Vision Section */
+.mission-vision {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 60px;
+}
+
+.mission, .vision {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.mission h3, .vision h3 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.mission p, .vision p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Values Section */
+.values-section {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.values-section h3 {
+    font-size: 28px;
+    color: #007bff;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.value-item {
+    background: white;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-color: #007bff;
+}
+
+.value-item h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.value-item p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 .about-2 h2{
@@ -73,23 +154,7 @@
     border-radius: 10px;
 }
 
-.blue{
-    font-size: 35px;
-    color: blueviolet;
-    margin: 10px 0;
-    max-width: 450px;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.about-3{
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-}
+/* Removed team section styles as Team now has its own dedicated page */
 
 
 @media (max-width: 800px) {
@@ -103,5 +168,27 @@
     }
     .about-right{
         flex-basis: 100%;
+    }
+    
+    .mission-vision {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .mission, .vision {
+        padding: 20px;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .values-section h3 {
+        font-size: 24px;
+    }
+    
+    .about-2 {
+        padding: 20px 0;
     }
 }
