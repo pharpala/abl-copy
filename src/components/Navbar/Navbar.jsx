@@ -24,8 +24,17 @@ const Navbar = () => {
 
   const [mobileMenu, setMobileMenu] = useState(false)
   const toggleMenu = () => {
-    mobileMenu ? setMobileMenu(false) : setMobileMenu(true)
+    setMobileMenu(!mobileMenu)
   }
+
+  const closeMobileMenu = () => {
+    setMobileMenu(false)
+  }
+
+  // Close mobile menu when location changes
+  useEffect(() => {
+    setMobileMenu(false)
+  }, [location])
 
   return (
     <nav className={`container ${(isHomePage && !sticky) ? '' : 'dark-nav'}`}>
@@ -33,12 +42,12 @@ const Navbar = () => {
         <img src={logo} alt="logo" className='logo logo-link'/>
       </Link>
         <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About us</Link></li>
-          <li><Link to="/team">Team</Link></li>
-          <li><Link to="/gallery">Gallery</Link></li>
-          <li><Link to="/blog">Blog</Link></li>
-          <li><Link to="/contact" className='btn'>Contact us</Link></li>
+          <li><Link to="/" onClick={closeMobileMenu}>Home</Link></li>
+          <li><Link to="/about" onClick={closeMobileMenu}>About us</Link></li>
+          <li><Link to="/team" onClick={closeMobileMenu}>Team</Link></li>
+          <li><Link to="/gallery" onClick={closeMobileMenu}>Gallery</Link></li>
+          <li><Link to="/blog" onClick={closeMobileMenu}>Blog</Link></li>
+          <li><Link to="/contact" className='btn' onClick={closeMobileMenu}>Contact us</Link></li>
         </ul>
         <img src={menu_icon} alt="menu icon" className='menu-icon' onClick={toggleMenu}/>
     </nav>

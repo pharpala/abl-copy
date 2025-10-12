@@ -197,10 +197,12 @@ const Team = () => {
                             <div className="modal-info">
                                 <h2 className="modal-name">{selectedMember.name}</h2>
                                 <p className="modal-position">{selectedMember.position}</p>
-                                <p className="modal-email">{selectedMember.email}</p>
                                 <div className="modal-social">
-                                    <a href={selectedMember.linkedin} className="social-link linkedin" target="_blank" rel="noopener noreferrer">
+                                    <a href={selectedMember.linkedin} className="social-link" target="_blank" rel="noopener noreferrer">
                                         LinkedIn
+                                    </a>
+                                    <a href={`mailto:${selectedMember.email}`} className="social-link" target="_blank" rel="noopener noreferrer">
+                                        Email
                                     </a>
                                 </div>
                             </div>
@@ -213,3 +215,4 @@ const Team = () => {
 }
 
 export default Team
+

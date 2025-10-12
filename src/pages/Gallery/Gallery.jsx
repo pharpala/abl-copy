@@ -8,6 +8,15 @@ const Gallery = () => {
     const [selectedImageIndex, setSelectedImageIndex] = useState(null)
     const [imagesLoaded, setImagesLoaded] = useState({})
     
+    // Scroll to top when component mounts or eventId changes
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        })
+    }, [eventId])
+    
     // Event data with all images
     const events = {
         'leadership-focus': {

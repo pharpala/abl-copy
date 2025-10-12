@@ -1,19 +1,15 @@
 /* Team Page - Wall Theme */
 .team-page {
     min-height: 100vh;
-    background: #f5f5f0;
+    background: white;
     position: relative;
     overflow-x: hidden;
+    padding-bottom: 60px;
 }
 
-/* Wall Background */
+/* Wall Background - Remove fixed positioning to allow footer to show */
 .team-wall-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
+    display: none;
 }
 
 .wall-texture {
@@ -22,12 +18,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: 
-        radial-gradient(circle at 20% 30%, rgba(0,0,0,0.02) 1px, transparent 1px),
-        radial-gradient(circle at 70% 60%, rgba(0,0,0,0.015) 1px, transparent 1px),
-        radial-gradient(circle at 45% 80%, rgba(0,0,0,0.01) 1px, transparent 1px),
-        linear-gradient(135deg, #f8f8f5 0%, #f0f0eb 50%, #e8e8e3 100%);
-    background-size: 200px 200px, 150px 150px, 300px 300px, 100% 100%;
+    background: white;
 }
 
 .wall-shadows {
@@ -86,17 +77,13 @@
 }
 
 .team-title {
-    font-size: 4rem;
-    font-weight: 900;
-    color: #2d3748;
-    margin: 0 0 1rem 0;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(135deg, #2d3748 0%, #8b5cf6 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-size: 48px;
+    color: red;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    font-weight: 700;
 }
 
 .team-subtitle {
@@ -557,8 +544,13 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .team-page {
+        padding-bottom: 80px;
+        min-height: auto;
+    }
+    
     .team-header {
-        padding: 80px 15px 40px;
+        padding: 100px 15px 40px;
     }
     
     .department-tabs {
@@ -646,6 +638,14 @@
 }
 
 @media (max-width: 480px) {
+    .team-page {
+        padding-bottom: 100px;
+    }
+    
+    .team-header {
+        padding: 90px 15px 30px;
+    }
+    
     .team-title {
         font-size: 2rem;
     }

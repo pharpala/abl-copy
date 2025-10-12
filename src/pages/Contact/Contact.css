@@ -18,12 +18,14 @@
 }
 
 .contact-col h3{
-    color: #000f38;
-    font-weight: 600;
-    font-size: 28px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
+    font-size: 48px;
+    color: red;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    font-weight: 700;
+    display: block;
     position: relative;
 }
 
@@ -119,21 +121,21 @@
     border-radius: 8px;
     border-left: 4px solid #28a745;
     font-weight: 500;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: all 0.3s ease;
-    min-height: 0;
-}
-
-.contact-col span:empty {
-    display: none;
-    margin: 0;
-    padding: 0;
-}
-
-.contact-col span:not(:empty) {
     opacity: 1;
     transform: translateY(0);
+    transition: all 0.3s ease;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .contact form .btn {

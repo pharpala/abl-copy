@@ -3,18 +3,13 @@
     min-height: auto;
     position: relative;
     overflow: visible;
-    background: #f5f5f0;
-    padding-bottom: 2rem;
+    background: white;
+    padding-top: 3rem;
 }
 
-/* Wall Background */
+/* Wall Background - Simplified for better mobile experience */
 .wall-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    z-index: 1;
+    display: none;
 }
 
 .wall-texture {
@@ -80,6 +75,7 @@
 
 /* Back Button */
 .back-button {
+    margin-top: 2rem;
     position: fixed;
     top: 6rem;
     left: 2rem;
@@ -130,17 +126,13 @@
 }
 
 .gallery-title {
-    font-size: 3.5rem;
-    font-weight: 900;
-    color: #2d3748;
-    margin: 0 0 1rem 0;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(135deg, #2d3748 0%, #8b5cf6 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-size: 48px;
+    color: red;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    font-weight: 700;
 }
 
 .photo-count {
@@ -152,24 +144,26 @@
     font-family: 'Georgia', serif;
 }
 
-/* Photos Wall Container */
+/* Photos Wall Container - Improved mobile layout */
 .photos-wall {
     position: relative;
     width: 100%;
-    min-height: 80vh;
-    height: 80vh;
+    min-height: auto;
     padding: 0 2rem 2rem 2rem;
     z-index: 10;
     overflow: visible;
     margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    align-items: start;
 }
 
-/* Pinned Photos */
+/* Pinned Photos - Grid-based layout */
 .pinned-photo {
-    position: absolute;
-    left: var(--photo-x);
-    top: var(--photo-y);
-    width: 280px;
+    position: relative;
+    width: 100%;
+    max-width: 280px;
     cursor: pointer;
     opacity: 0;
     transform: rotate(var(--photo-rotation)) scale(var(--photo-scale));
@@ -178,6 +172,7 @@
     animation-delay: var(--photo-delay);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     z-index: 5;
+    justify-self: center;
 }
 
 @keyframes photo-pin-in {
@@ -460,8 +455,14 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+    .photos-wall {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.5rem;
+        padding: 0 1.5rem 2rem 1.5rem;
+    }
+    
     .pinned-photo {
-        width: 240px;
+        max-width: 240px;
     }
     
     .photo-image {
@@ -469,7 +470,7 @@
     }
     
     .gallery-title {
-        font-size: 3rem;
+        font-size: 40px;
     }
 }
 
@@ -484,31 +485,28 @@
     }
     
     .gallery-title {
-        font-size: 2.5rem;
-    }
-    
-    .pinned-photo {
-        width: 220px;
-        position: relative !important;
-        transform: rotate(var(--photo-rotation)) scale(0.9) !important;
-        margin: 2rem auto;
-        display: block;
-        left: auto !important;
-        top: auto !important;
-    }
-    
-    .photo-image {
-        height: 160px;
+        font-size: 36px;
     }
     
     .photos-wall {
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1rem 2rem 1rem;
     }
     
-.back-button {
+    .pinned-photo {
+        max-width: 300px;
+        width: 100%;
+        transform: rotate(0deg) scale(1) !important;
+        position: relative !important;
+        margin: 0 auto;
+    }
+    
+    .photo-image {
+        height: 200px;
+    }
+    
+    .back-button {
         top: 5rem;
         left: 1rem;
         padding: 0.75rem 1.25rem;
@@ -525,16 +523,21 @@
 }
 
 @media (max-width: 480px) {
+    .gallery-title {
+        font-size: 32px;
+    }
+    
     .pinned-photo {
-        width: 200px;
+        max-width: 280px;
     }
     
     .photo-image {
-        height: 140px;
+        height: 180px;
     }
     
-    .gallery-title {
-        font-size: 2rem;
+    .photos-wall {
+        padding: 0 0.5rem 2rem 0.5rem;
+        gap: 1.5rem;
     }
     
     .modal-nav.prev,

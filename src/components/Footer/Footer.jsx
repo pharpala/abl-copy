@@ -12,16 +12,18 @@ const Footer = () => {
         <div className="footer-section links">
         <h3>Quick Links</h3>
           <ul>
-          <li><Link to="/about">About us</Link></li>
-          <li><Link to="/student-clubs">Student Clubs</Link></li>
-          <li><Link to="/forms-documents">Forms & Documents</Link></li>
-          <li><Link to="/contact">Contact us</Link></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/team">Our Team</Link></li>
+          <li><Link to="/gallery">Gallery</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/contact">Contact Us</Link></li>
           </ul>
         </div>
         <div className="footer-section social">
           <h3 className='pixel'>Follow Us</h3>
           <div className="social-icons">
-            <a href="https://www.instagram.com/cepssc" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/abl.lang" target="_blank" rel="noopener noreferrer">
               <img src={instagram} alt="Instagram" className="icon-2"/>
             </a>
             <a href="https://x.com/uofgcepssc" target="_blank" rel="noopener noreferrer">
@@ -34,7 +36,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        &copy; Made by <a className='pranay' href='https://www.pranayharpalani.com' target='_blank'>Pranay Harpalani</a> | All Rights Reserved
+        &copy; Made by <a className='pranay' href='https://www.linkedin.com/in/pranayharpalani' target='_blank'>Pranay Harpalani</a> | All Rights Reserved
       </div>
     </footer>
   );

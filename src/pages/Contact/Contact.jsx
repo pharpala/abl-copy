@@ -69,7 +69,7 @@ const Contact = () => {
                 Submit
             </button>
         </form> 
-        <span> {result} </span>
+        {result && <span>{result}</span>}
       </div>
   </div>
   )

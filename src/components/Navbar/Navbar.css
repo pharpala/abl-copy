@@ -41,6 +41,17 @@ nav ul li a:active {
     background: #e9304c;
 }
 
+.dark-nav .btn {
+    background: white !important;
+    color: #e9304c !important;
+    border: 2px solid #e9304c;
+}
+
+.dark-nav .btn:hover {
+    background: #e9304c !important;
+    color: white !important;
+}
+
 .menu-icon{
     display: none;
 }
@@ -54,6 +65,8 @@ nav ul li a:active {
 @media (max-width: 1000px) {
     .logo{
         width: 140px;
+        height: auto;
+        object-fit: contain;
     }
     nav ul li {
         margin: 10px 15px;
@@ -64,6 +77,14 @@ nav ul li a:active {
     nav{
         padding: 15px 0;
     }
+    
+    .logo{
+        width: 120px;
+        height: auto;
+        object-fit: contain;
+        max-width: 120px;
+    }
+    
     nav ul{
         position: fixed;
         top: 0;
@@ -71,20 +92,69 @@ nav ul li a:active {
         bottom: 0;
         background: #212EA0;
         z-index: 9999;
-        width: 200px;
-        padding-top: 70px;
-        transition: 0.5s;
+        width: 250px;
+        padding-top: 80px;
+        transition: right 0.3s ease-in-out;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
     }
     nav ul li{
         display: block;
-        margin: 25px 40px;
+        margin: 25px 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 15px;
+    }
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+    nav ul li a {
+        font-size: 18px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        display: block;
+        padding: 10px 0;
+    }
+    nav ul li a:hover {
+        color: #FFC429;
+        transform: translateX(10px);
     }
     .menu-icon{
         display: block;
         width: 30px;
         cursor: pointer;
+        z-index: 10000;
+        position: relative;
+        transition: transform 0.3s ease;
+    }
+    .menu-icon:hover {
+        transform: scale(1.1);
     }
     .hide-mobile-menu{
-        right: -200px;
+        right: -250px;
+    }
+    
+    /* Add backdrop when menu is open */
+    nav ul:not(.hide-mobile-menu)::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
+}
+
+/* Additional mobile styles for very small screens */
+@media (max-width: 480px) {
+    .logo{
+        width: 100px;
+        height: auto;
+        object-fit: contain;
+        max-width: 100px;
+    }
+    
+    nav {
+        padding: 10px 0;
     }
 }

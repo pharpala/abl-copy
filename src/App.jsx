@@ -51,7 +51,6 @@ const Gallery_Page = () => {
 const Contact_us = () => {
   return (
     <div className='contact-container '>
-      <Title subtitle='Contact Us' title='Get in Touch'/>
       <Contact />
     </div>
   )
