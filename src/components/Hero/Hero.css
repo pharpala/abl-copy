@@ -93,6 +93,12 @@
     filter: brightness(0.75);
 }
 
+.icon-gryphlife {
+    object-fit: contain;
+    padding: 0px;
+    background-color: white;
+}
+
 @media (max-width: 850px) {
     .hero-title {
         font-size: 3.5rem;

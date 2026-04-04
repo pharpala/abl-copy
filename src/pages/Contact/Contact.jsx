@@ -60,7 +60,7 @@ const Contact = () => {
             <input type="text" name='name' placeholder=' John Doe'
             required/>
             <label> Your Email </label>
-            <input type="Email" name='email' placeholder='doe@gmail.com'
+            <input type="Email" name='email' placeholder='doe@uoguelph.ca'
             required/>
             <label> Write your message here </label>
             <textarea name="message" rows='5' placeholder='How do I participate in the next event?' 

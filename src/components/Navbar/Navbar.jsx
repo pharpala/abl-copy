@@ -46,7 +46,6 @@ const Navbar = () => {
           <li><Link to="/about" onClick={closeMobileMenu}>About us</Link></li>
           <li><Link to="/team" onClick={closeMobileMenu}>Team</Link></li>
           <li><Link to="/gallery" onClick={closeMobileMenu}>Gallery</Link></li>
-          <li><Link to="/blog" onClick={closeMobileMenu}>Blog</Link></li>
           <li><Link to="/contact" className='btn' onClick={closeMobileMenu}>Contact us</Link></li>
         </ul>
         <img src={menu_icon} alt="menu icon" className='menu-icon' onClick={toggleMenu}/>

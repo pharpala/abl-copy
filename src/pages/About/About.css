@@ -10,16 +10,17 @@
 }
 
 .about-right{
-    flex-basis: 40%;
+    flex-basis: 50%;
 }
 
 .about-left{
-    flex-basis: 56%;
+    flex-basis: 46%;
 }
 
 .about-img{
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
+    min-height: 400px;
     border-radius: 10px;
 }
 

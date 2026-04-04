@@ -19,7 +19,7 @@ const Home = () => {
     <div>
       <Hero />
       <div className="container">
-        <Title subtitle='Next Events' title='Check out our upcoming events!'/>
+        <Title subtitle='Next Events' title='Check out our events!'/>
         <Events/>
       </div>
     </div>

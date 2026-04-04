@@ -1,6 +1,7 @@
 import React from 'react'
 import './About.css'
 import summitlady from '../../assets/summit-lady.png'
+import teampic from "../../assets/team.jpg"
 
 
 const About = () => {
@@ -18,7 +19,7 @@ const About = () => {
                 throughout the professional landscape. </p>
         </div>
         <div className="about-right">
-            <img src={summitlady} alt="asian-business-leader" className='about-img'/>
+            <img src={teampic} alt="asian-business-leader" className='about-img'/>
         </div>
     </div>
     <div className='about-2'>

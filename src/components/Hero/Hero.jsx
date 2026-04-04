@@ -1,8 +1,8 @@
 import React from 'react'
 import './Hero.css'
 import instagram from '../../assets/instagram.avif'
-import facebook from '../../assets/facebook.jpg'
-import twitter from '../../assets/twitter.webp'
+import linkedin from '../../assets/linkedin.webp'
+import gryphlife from '../../assets/gryphlife.png'
 
 
 const Hero = () => {
@@ -29,11 +29,11 @@ const Hero = () => {
         <a href="https://www.instagram.com/abl.lang" target="_blank" rel="noopener noreferrer">
             <img src={instagram} alt="instagram" className="icon"/>
         </a>
-        <a href="https://x.com/uofgcepssc" target="_blank" rel="noopener noreferrer">
-            <img src={twitter} alt="twitter" className="icon"/>
+        <a href="https://www.linkedin.com/company/asian-business-leaders/" target="_blank" rel="noopener noreferrer">
+            <img src={linkedin} alt="linkedin" className="icon"/>
         </a>
-        <a href="https://www.facebook.com/CEPSSC/" target="_blank" rel="noopener noreferrer">
-            <img src={facebook} alt="facebook" className="icon"/>
+        <a href="https://gryphlife.uoguelph.ca/organization/asianbusinessleaders" target="_blank" rel="noopener noreferrer">
+            <img src={gryphlife} alt="gryphlife" className="icon icon-gryphlife"/>
         </a>
 
       </div>
