@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        &copy; Made by <a className='pranay' href='https://www.linkedin.com/in/pranayharpalani' target='_blank'>Pranay Harpalani</a> | All Rights Reserved
+        &copy; Made by <a className='pranay' href='https://www.linkedin.com/in/pranayharpalani' target='_blank'>Pranay Harpalani</a> | 2025/2026 All Rights Reserved
       </div>
     </footer>
   );

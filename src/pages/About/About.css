@@ -20,7 +20,8 @@
 .about-img{
     width: 100%;
     max-width: 500px;
-    min-height: 400px;
+    height: 400px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -171,6 +172,9 @@
     }
     .about-right{
         flex-basis: 100%;
+    }
+    .about-img{
+        height: 250px;
     }
     
     .mission-vision {
