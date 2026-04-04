@@ -54,6 +54,18 @@ const Gallery = () => {
             color: '#DC2626',
             gradient: 'linear-gradient(135deg, #f59e0b 0%, #dc2626 100%)',
             icon: '🧠'
+        },
+        'gryphons-den': {
+            title: "Gryphon's Den",
+            description: 'A high-energy pitch competition where members showcase their entrepreneurial ideas to a panel of judges.',
+            images: Array.from({ length: 9 }, (_, i) => ({
+                id: `gd-${i + 1}`,
+                src: `/gryphons-den/${i + 1}.png`,
+                alt: `Gryphon's Den - Image ${i + 1}`
+            })),
+            color: '#C8102E',
+            gradient: 'linear-gradient(135deg, #C8102E 0%, #FFC72C 100%)',
+            icon: '🦁'
         }
     }
     

@@ -7,6 +7,16 @@ const GalleryOverview = () => {
     
     const events = [
         {
+            id: 'gryphons-den',
+            title: "Gryphon's Den",
+            description: 'A high-energy pitch competition where members showcase their entrepreneurial ideas to a panel of judges.',
+            imageCount: 9,
+            coverImage: '/gryphons-den/1.png',
+            color: '#C8102E',
+            gradient: 'linear-gradient(135deg, #C8102E 0%, #FFC72C 100%)',
+            icon: '🦁'
+        },
+        {
             id: 'leadership-focus',
             title: 'Leadership Focus',
             description: 'Empowering the next generation of leaders through focused workshops and mentorship programs.',
