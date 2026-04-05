@@ -11,7 +11,7 @@ const GalleryOverview = () => {
             title: "Gryphon's Den",
             description: 'A high-energy pitch competition where members showcase their entrepreneurial ideas to a panel of judges.',
             imageCount: 9,
-            coverImage: '/gryphons-den/1.png',
+            coverImage: '/gryphons-den/2.png',
             color: '#C8102E',
             gradient: 'linear-gradient(135deg, #C8102E 0%, #FFC72C 100%)',
             icon: '🦁'

@@ -1,5 +1,13 @@
-import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom'
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [pathname])
+  return null
+}
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
 import Events from './components/Events/Events'
@@ -79,6 +87,7 @@ const App = () => {
 
   return (
     <Router>
+      <ScrollToTop />
       <Analytics />
       <Routes>
         <Route path="/" element={
