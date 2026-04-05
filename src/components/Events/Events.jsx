@@ -19,7 +19,7 @@ const Events = () => {
             {/* Brand Ambassadors Section */}
             <div className="brand-ambassadors-section">
                 <div className="brand-ambassadors-content">
-                    <h3>Become a Brand Ambassador</h3>
+                    <h3>Join the ABL team!</h3>
                     <p>Join our team of passionate advocates and help build the Asian business community. As a Brand Ambassador, you'll represent our values, connect with fellow professionals, and drive meaningful change in your local area.</p>
                     
                     <div className="ambassador-requirements">
