@@ -66,6 +66,18 @@ const Gallery = () => {
             color: '#C8102E',
             gradient: 'linear-gradient(135deg, #C8102E 0%, #FFC72C 100%)',
             icon: '🦁'
+        },
+        'asian-heritage-month': {
+            title: 'Asian Heritage Month',
+            description: 'Celebrating Asian heritage, community, and culture through shared activities, conversation, and connection.',
+            images: Array.from({ length: 9 }, (_, i) => ({
+                id: `ahm-${i + 1}`,
+                src: `/asian-heritage-month/${i + 1}.png`,
+                alt: `Asian Heritage Month - Image ${i + 1}`
+            })),
+            color: '#BE123C',
+            gradient: 'linear-gradient(135deg, #BE123C 0%, #F59E0B 100%)',
+            icon: '🌸'
         }
     }
     
