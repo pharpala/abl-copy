@@ -321,7 +321,7 @@
 .polaroid-frame {
     background: #fffffb;
     border-radius: 8px;
-    padding: 20px 20px 60px 20px;
+    padding: 20px 20px 88px 20px;
     box-shadow: 
         0 8px 25px rgba(0, 0, 0, 0.15),
         0 4px 12px rgba(0, 0, 0, 0.1),
@@ -397,6 +397,7 @@
     font-family: 'Courier New', monospace;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    line-height: 1.35;
 }
 
 /* Modal Styles */
