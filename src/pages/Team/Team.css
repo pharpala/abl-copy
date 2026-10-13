@@ -343,7 +343,7 @@
 /* Member Photo */
 .member-photo-container {
     width: 100%;
-    height: 250px;
+    aspect-ratio: 4 / 5;
     overflow: hidden;
     border-radius: 4px;
     background: #f8f8f5;
@@ -354,6 +354,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center top;
+    transform-origin: center top;
     transition: all 0.3s ease;
     filter: 
         sepia(5%) 
@@ -611,10 +613,6 @@
         transform: translateY(-5px) rotate(0deg) scale(1.02);
     }
     
-    .member-photo-container {
-        height: 200px;
-    }
-    
     .modal-content-simple {
         padding: 1.5rem;
         gap: 1rem;
@@ -668,10 +666,6 @@
     
     .team-polaroid {
         width: 220px;
-    }
-    
-    .member-photo-container {
-        height: 180px;
     }
     
     .modal-content {
